@@ -1,0 +1,37 @@
+﻿@import "var-colors";
+
+.btn-primary {
+    color: $white;
+    font-weight: 600;
+    background-color: $primary;
+    border-radius: 0;
+    border: 2px solid $secondary;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+
+    &:hover, &:active, &:focus {
+        background-color: $hover;
+        border: 2px solid $hover-secondary;
+        color: $white;
+    }
+}
+
+.btn-secondary {
+    color: $white;
+    font-weight: 600;
+    background-color: $hover;
+    border-radius: 0;
+    border: 2px solid $hover-secondary;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+
+    &:hover, &:active, &:focus {
+        background-color: $primary;
+        border: 2px solid $secondary;
+        color: $white;
+    }
+}

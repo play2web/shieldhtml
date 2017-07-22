@@ -1,0 +1,49 @@
+﻿<section class="section-detect">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="page-header text-center">
+                    <h2>
+                        {{title}}
+                        <small>{{subtitle}}</small>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="timeline-header">
+                    <h3>We detect and protect your:</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <dl class="dl-horizontal">
+                            <ng-container *ngFor="let request of requests">
+                                <dt>
+                                    <i class="checked-icon checked" popover="{{request.description}}"
+                                       triggers="mouseenter:mouseleave" placement="right" popoverTitle="{{request.title}}"></i>
+                                </dt>
+                                <dd>{{request.introtext}}</dd>
+                            </ng-container>
+                        </dl>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <dl class="dl-horizontal">
+                            <ng-container *ngFor="let request of requests">
+                                <dt>
+                                    <i class="checked-icon checked" popover="{{request.description}}"
+                                       triggers="mouseenter:mouseleave" placement="right" popoverTitle="{{request.title}}"></i>
+                                </dt>
+                                <dd>{{request.introtext}}</dd>
+                            </ng-container>
+                        </dl>
+                    </div>
+                </div>
+                <div class="timeline-footer text-center">
+                    <small>{{footerText}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

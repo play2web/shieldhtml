@@ -1,0 +1,18 @@
+﻿@import "var-responsive-variables";
+
+.background-image, .background-image-front {
+    /* Small devices (tablets, 768px and up) */
+    @media #{$sm-max} {
+        position: relative;
+    }
+    /* Medium devices (desktops, 992px and up) */
+    @media #{$md-min} {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        z-index: -1;
+    }
+    /* Large devices (large desktops, 1200px and up) */
+    @media #{$lg-min} {
+    }
+}

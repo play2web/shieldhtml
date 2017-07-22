@@ -1,0 +1,27 @@
+﻿@import "var-mixins";
+
+$h1-font-sizes: ( null : 25px, 480px : 16px, 640px : 24px, 1024px: 34px );
+$small-font-sizes: ( null : 15px, 480px : 15px, 640px : 15px, 1024px: 20px );
+$small-font-sizes-second: ( null : 15px, 480px : 15px, 640px : 15px, 1024px: 15px );
+
+h1, h2, h3, h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    @include font-size($h1-font-sizes);
+    font-weight: 700;
+
+    small {
+        @include font-size($small-font-sizes);
+        font-weight:600;
+
+        &:nth-child(2) {
+            @include font-size($small-font-sizes-second);
+            font-weight:normal;
+        }
+
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,35 @@
+<section class="section-blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8 col-sm-12">
+                <div class="page-header text-center">
+                    <h2>
+                        {{heading}}
+                        <small>{{subheading}}</small>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+                <div class="row">
+                       <article class="blog-post col-md-6 col-sm-6" *ngFor="let article of articles">
+                            <figure>
+                                <img class="img-responsive" src="{{article.image}}" alt="{{article.heading}}"/>
+                            </figure>
+                            <div class="blog-body">
+                                <h2>{{article.name}}</h2>
+                                <p>{{article.text}}</p>
+                            </div>
+                        </article>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8 col-sm-12 text-center bottom-intro-text">
+                <small>{{bottomtext}}</small>
+                <h3>{{bottomheading}}</h3>
+            </div>
+            </div>
+    </div>
+</section>

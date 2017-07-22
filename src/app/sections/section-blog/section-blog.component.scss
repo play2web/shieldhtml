@@ -1,0 +1,45 @@
+@import "../../../sass/components/var-mixins";
+@import "../../../sass/components/var-responsive-variables";
+@import "../../../sass/components/var-colors";
+
+$h3-blog: ( null : 15px, 480px : 15px, 640px : 15px, 1024px: 20px );
+$h2-blog: ( null : 15px, 480px : 15px, 640px : 15px, 1024px: 20px );
+$small-intro: ( null : 10px, 480px : 13px, 640px : 13px, 1024px: 16px );
+
+.section-blog {
+    .blog-post {
+        margin-bottom: 30px;
+
+        @media #{$md-min} {
+            &:nth-child(even) {
+                padding-right: 30px;
+            }
+
+            &:nth-child(odd) {
+                padding-left: 30px;
+            }
+        }
+
+        .blog-body {
+            h2 {
+                color: $secondary;
+                @include font-size($h2-blog);
+                margin-bottom: 15px;
+                margin-top: 25px;
+            }
+        }
+    }
+
+    .bottom-intro-text {
+        small {
+            @include font-size($small-intro);
+            font-weight: 600;
+        }
+
+        h3 {
+            color: $secondary;
+            @include font-size($h3-blog);
+            margin-bottom: 25px;
+        }
+    }
+}

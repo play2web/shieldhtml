@@ -1,0 +1,15 @@
+﻿@import "var-colors";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+small {
+    display: block;
+    margin-top: 25px;
+    color: $black !important;
+}
+
+.page-header {
+    border: 0;
+}
